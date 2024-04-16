@@ -54,7 +54,7 @@ function Image() {
 
 function FormPage({ isSignUp, toggleForm, sucsess, setSucsess }) {
   return (
-    <div className="h-full w-full lg:w-1/2 lg:rounded-r-2xl flex flex-col relative">
+    <div className="h-full w-full lg:w-1/2 lg:rounded-r-2xl flex flex-col ">
       <div className="w-full h-[4rem] flex justify-end items-center ">
         <img src={plane} alt="airplane" className="pt-10 pr-5" />
       </div>
@@ -83,7 +83,7 @@ function FormPage({ isSignUp, toggleForm, sucsess, setSucsess }) {
           />
         )}
       </div>
-      <div className="w-full h-max">
+      <div className="w-full h-full relative">
         <img
           src={mosque}
           alt="mosque"
