@@ -41,7 +41,7 @@ export default function LoginForm({ toggleForm, setSucsess }) {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-80 h-10 pl-4 outline-none rounded-md"
+          className="w-full h-max md:w-80 md:h-10 pl-4 outline-none rounded-md"
         />
         <div
           className="absolute top-0 left-4 bg-stone-50 px-2 text-sm text-sky-400 font-semibold"
@@ -56,7 +56,7 @@ export default function LoginForm({ toggleForm, setSucsess }) {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-80 h-10 pl-4 outline-none rounded-md"
+          className="w-full h-max md:w-80 md:h-10 pl-4 outline-none rounded-md"
         />
         <div
           className="absolute top-0 left-4 bg-stone-50 px-2 text-sm text-sky-400 font-semibold"
@@ -65,10 +65,10 @@ export default function LoginForm({ toggleForm, setSucsess }) {
           Paswoord
         </div>
       </div>
-      <div className="w-[21rem] h-[2rem] mt-2 flex items-center justify-end">
+      <div className="w-full h-max md:w-[21rem] md:h-[2rem] mt-2 flex items-center justify-center md:justify-end">
         <a
           href="/"
-          className="text-sm text-gray-400 hover:text-gray-500 decoration-none transition duration-300  "
+          className="text-sm text-gray-400 hover:text-gray-500 decoration-none transition duration-300 "
         >
           Forgot your password?
         </a>
@@ -90,24 +90,24 @@ export default function LoginForm({ toggleForm, setSucsess }) {
       <div className="w-full h-max mt-2 flex items-center justify-center gap-3 z-10 ">
         <a
           href="/"
-          className="px-8 py-3 bg-sky-100 hover:bg-sky-200 rounded-md transiton duration-300"
+          className=" px-4 py-2 md:px-8 md:py-3 bg-sky-100 hover:bg-sky-200 rounded-md transiton duration-300"
         >
           <FcGoogle className="text-2xl" />
         </a>
         <a
           href="/"
-          className="px-8 py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
+          className="px-4 py-2 md:px-8 md:py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
         >
           <BsFacebook className="text-2xl text-sky-700" />
         </a>
         <a
           href="/"
-          className="px-8 py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
+          className="px-4 py-2 md:px-8 md:py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
         >
           <AiFillApple className="text-2xl" />
         </a>
       </div>
-      <div className="w-full h-[2rem] mt-2 mb-2 sm:mb-0 flex items-center justify-center gap-5">
+      <div className="w-full h-[2rem] mt-2 mb-2 sm:mb-0 flex items-center justify-center gap-5  z-50">
         <p
           onClick={toggleForm}
           className="text-sm  hover:text-gray-500 decoration-none transition duration-300 cursor-pointer "

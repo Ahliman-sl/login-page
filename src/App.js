@@ -24,7 +24,7 @@ function Login() {
   }
 
   return (
-    <div className="w-[80rem] h-[50rem]  md:h-[60rem] lg:h-[40rem] bg-stone-50 rounded-2xl flex flex-col lg:flex-row mx-5">
+    <div className=" w-full h-full  md:w-[80rem]  md:h-[60rem] lg:h-[40rem] bg-stone-50 lg:rounded-2xl flex flex-col lg:flex-row ">
       <Image />
       <FormPage
         isSignUp={isSignUp}
@@ -38,9 +38,9 @@ function Login() {
 
 function Image() {
   return (
-    <div className="h-full w-full lg:w-1/2 bg-image rounded-l-2xl">
-      <div className="w-full h-full  lg:h-[10rem] flex flex-col items-center justify-center">
-        <h1 className="italic  text-5xl font-bold text-white pt-5 font-handWrite">
+    <div className="h-full w-full p-5 lg:w-1/2 bg-image lg:rounded-l-2xl">
+      <div className="w-full h-full lg:h-[10rem] flex flex-col items-center justify-center">
+        <h1 className="italic text-center text-5xl font-bold text-white  font-handWrite">
           Travelista Tours
         </h1>
         <p className="pt-4 text-center text-white">
@@ -54,12 +54,12 @@ function Image() {
 
 function FormPage({ isSignUp, toggleForm, sucsess, setSucsess }) {
   return (
-    <div className="h-full w-full lg:w-1/2 rounded-r-2xl flex flex-col relative">
+    <div className="h-full w-full lg:w-1/2 lg:rounded-r-2xl flex flex-col relative">
       <div className="w-full h-[4rem] flex justify-end items-center ">
         <img src={plane} alt="airplane" className="pt-10 pr-5" />
       </div>
       <div className="w-full h-max flex flex-col justify-center items-center gap-3 mt-[2rem]">
-        <h2 className="text-sky-500 text-6xl font-bold w-full h-max text-center">
+        <h2 className="text-sky-500 text-4xl md:text-6xl font-bold w-full h-max text-center">
           Welcome
         </h2>
         <p className="text-gray-400">
@@ -83,16 +83,18 @@ function FormPage({ isSignUp, toggleForm, sucsess, setSucsess }) {
           />
         )}
       </div>
-      <img
-        src={mosque}
-        alt="mosque"
-        className="items-start w-[5rem] sm:w-[10rem] object-cover absolute bottom-0 left-0"
-      />
-      <img
-        src={tower}
-        alt="mosque"
-        className="items-start w-[5rem] sm:w-[10rem]  object-cover absolute bottom-0 right-0"
-      />
+      <div className="w-full h-max">
+        <img
+          src={mosque}
+          alt="mosque"
+          className="items-start w-[5rem] sm:w-[10rem] object-cover absolute bottom-0 left-0"
+        />
+        <img
+          src={tower}
+          alt="mosque"
+          className="items-start w-[5rem] sm:w-[10rem]  object-cover absolute bottom-0 right-0"
+        />
+      </div>
     </div>
   );
 }

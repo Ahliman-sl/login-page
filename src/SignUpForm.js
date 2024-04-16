@@ -48,7 +48,7 @@ export default function SignUpForm({ toggleForm }) {
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="w-80 h-10 pl-4 outline-none rounded-md"
+          className=" w-full h-max md:w-80 md:h-10 pl-4 outline-none rounded-md"
           required
         />
         <div
@@ -64,7 +64,7 @@ export default function SignUpForm({ toggleForm }) {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-80 h-10 pl-4 outline-none rounded-md"
+          className="w-full h-max md:w-80 md:h-10 pl-4 outline-none rounded-md"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           required
         />
@@ -81,7 +81,7 @@ export default function SignUpForm({ toggleForm }) {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-80 h-10 pl-4 outline-none rounded-md"
+          className="w-full h-max md:w-80 md:h-10 pl-4 outline-none rounded-md"
         />
         <div
           className="absolute top-0 left-4 bg-stone-50 px-2 text-sm text-sky-400 font-semibold"
@@ -90,7 +90,7 @@ export default function SignUpForm({ toggleForm }) {
           Paswoord
         </div>
       </div>
-      <div className="w-[21rem] h-[2rem] mt-2 flex items-center justify-end">
+      <div className="w-full h-max md:w-[21rem] md:h-[2rem] mt-2 flex items-center justify-center md:justify-end">
         <p
           onClick={toggleForm}
           className="text-sm text-gray-400 hover:text-gray-500 decoration-none transition duration-300  cursor-pointer "
@@ -114,19 +114,19 @@ export default function SignUpForm({ toggleForm }) {
       <div className="w-full h-max mt-0 mb-5  flex items-center justify-center gap-3 z-10 ">
         <a
           href="/"
-          className="px-8 py-3 bg-sky-100 hover:bg-sky-200 rounded-md transiton duration-300"
+          className=" px-4 py-2 md:px-8 md:py-3 bg-sky-100 hover:bg-sky-200 rounded-md transiton duration-300"
         >
           <FcGoogle className="text-2xl" />
         </a>
         <a
           href="/"
-          className="px-8 py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
+          className="px-4 py-2 md:px-8 md:py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
         >
           <BsFacebook className="text-2xl text-sky-700" />
         </a>
         <a
           href="/"
-          className="px-8 py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
+          className="px-4 py-2 md:px-8 md:py-3 bg-sky-100 hover:bg-sky-200  rounded-md transiton duration-300"
         >
           <AiFillApple className="text-2xl" />
         </a>
